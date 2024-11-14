@@ -82,7 +82,7 @@ user.greetingtwo = () => {
 // }
 
 // const obj3 = Object.assign({},obj1,obj2) 
-const obj = {...obj1,...obj2} // we can do like this using spread operator
+// const obj = {...obj1,...obj2} // we can do like this using spread operator
 
 // console.log(obj)
 
@@ -104,6 +104,18 @@ const obj = {...obj1,...obj2} // we can do like this using spread operator
 ////////////------ destructuring ------------//////////////
 
 
+const course = {
+    couseName : "js",
+    Price : "999",
+    instructor : "Akash"
+}
+
+const {instructor : techer} = course
+
+
+// console.log(techer)
+
+////json//////////
 
 
 
