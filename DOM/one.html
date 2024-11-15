@@ -5,11 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOMLearning</title>
   </head>
-  <body style="background-color: #212121; color: white;">
-    <div class="bg-black" >
-      <h1 id="title" class="heading">Learning JavaScript</h1>
-      <p>Lorem ipsum dolor, sit amet</p>
+  <body style="background-color: #212121; color: white">
+        <div class="parent">
+          <div class="day">Monday</div>
+          <div class="day">Tuesday</div>
+          <div class="day">Wednesday</div>
+          <div class="day">thursday</div>
+          <div class="day">friday</div>
+          <div class="day">saturday</div>
+          <div class="day">Sunday</div>
+        </div>
+     
     </div>
   </body>
-  <script src="../DOM/DOM.js"></script>
+  <script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent)
+    // console.log(parent.children[1].innerHTML)
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //   console.log(parent.children[i].innerHTML)
+    // }
+    parent.children[1].style.color="orange"
+    // console.log(parent.firstElementChild)
+    // console.log(parent.lastElementChild.style.color="red")
+
+    const dayone =document.querySelector('.day')
+    console.log(dayone)
+    console.log(dayone.parentElement)
+  </script>
 </html>
