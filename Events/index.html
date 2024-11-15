@@ -60,10 +60,50 @@
 
   <script>
     // document.getElementById("owl").onclick = function () {};
-    document.getElementById('owl').addEventListener('click',()=>{
-        alert("Owl clicked")
-    })
 
-    
+    //read this
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    // document.getElementById("owl").addEventListener(
+    //   "click",
+    //   (event) => {
+    //     const events = event.currentTarget;
+    //     console.log(events);
+    //     console.log(event);
+
+    //   },
+    //   false
+    // );
+
+    document.getElementById("images").addEventListener("click", () => {
+      // console.log("clieckk inside ul");
+    });
+
+    document.getElementById("owl").addEventListener("click", (e) => {
+      //   e.stopPropagation;
+    });
+
+    document.getElementById("google").addEventListener("click", (e) => {
+      //   e.preventDefault()
+      //   e.stopPropagation()
+      //   console.log("Cliecked google");
+    });
+
+    document.querySelector("#images").addEventListener("click", (e) => {
+      //   console.log(e.target.parentNode);
+
+    //   console.log(e.target.tagName);
+
+      if (e.target.tagName === "IMG") {
+        let removeIT = e.target.parentNode;
+
+        removeIT.remove();
+
+        //   removeIT.parentNode.removeChild(removeIT);
+      }
+    });
   </script>
 </html>
