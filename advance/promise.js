@@ -6,6 +6,7 @@ const promiseOne = new Promise(function (resolve, reject) {
   }, 1000);
 });
 
+
 promiseOne.then(() => {
   // console.log("Promise Consume")
 });
